@@ -13,6 +13,9 @@
   --secondary-text-color: #22222280;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 
 ul {
