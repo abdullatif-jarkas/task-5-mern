@@ -43,7 +43,7 @@ nav.active {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  position: absolute;
+  position: fixed;
   transition: top 0.8s ease-in-out;
   width: 100%;
   top: -110%;
