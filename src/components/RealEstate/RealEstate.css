@@ -1,0 +1,7 @@
+.estates-content {
+  display: flex;
+  gap: 31px;
+  flex-wrap: wrap;
+  margin-top: 41px;
+  margin-bottom: 94px;
+}

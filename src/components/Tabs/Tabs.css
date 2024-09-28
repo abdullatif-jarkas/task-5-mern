@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  gap: 50px;
+  margin-top: 56px;
+  overflow-x: auto;
+  .tab {
+    flex-shrink: 0;
+    font-size: 18px;
+    line-height: 21.78px;
+    font-weight: 400;
+    color: var(--main-heading-text-color);
+    height: 37px;
+    transition: font-weight .3s;
+    cursor: pointer;
+  }
+  .tab.active {
+    font-weight: 600;
+    color: var(--main-blue-color);
+    border-bottom: 2px solid var(--main-blue-color);
+  }
+}
+
+@media screen and (width < 992px) {
+  .tabs {
+    gap: 30px;
+  }
+  .tabs .tab {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+}

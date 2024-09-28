@@ -1,0 +1,57 @@
+.dream-home {
+  padding: 107px 0;
+  position: relative;
+  .img-container {
+    .dream-bg {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: rgb(0 0 0 / 50%);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 606px;
+    text-align: center;
+    margin: 0 auto;
+    h3 {
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 56px;
+    }
+    p {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-top: 58px;
+    }
+    h3,
+    p {
+      color: white;
+    }
+  }
+}
+
+@media screen and (width < 992px) {
+  .dream-home {
+    padding: 133px 0;
+  }
+  .dream-home .content h3 {
+    font-size: 30px;
+  }
+  .dream-home .content p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}

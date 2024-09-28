@@ -1,0 +1,54 @@
+.trend-card {
+  max-width: 382px;
+  height: 447px;
+  box-shadow: 0 0 10px #0000001A;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  .trend-img {
+    width: 100%;
+  }
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-top: 16px;
+    span.price {
+      color: var(--main-blue-color);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 29px;
+      max-width: 180px;
+    }
+    .card-location {
+      display: flex;
+      align-items: center;
+      gap: 10.48px;
+      span {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (width < 992px) {
+  .trend-card .card-info h5 {
+    line-height: 27px;
+    max-width: unset;
+  }
+  .trend-card .card-info span {
+    font-size: 12px;
+  }
+  .trend-card .card-info .card-location img {
+    width: 18px;
+  }
+}

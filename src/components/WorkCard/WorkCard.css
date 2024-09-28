@@ -1,0 +1,23 @@
+.work-card {
+  max-width: 380px;
+  border-radius: 15px;
+  padding: 30px 40px 80px;
+  h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--secondary-text-color);
+  }
+}
+
+@media screen and (width < 992px) {
+  .work-card {
+    padding: 15px 17.5px 34px;
+  }
+}

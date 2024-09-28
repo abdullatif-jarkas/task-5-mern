@@ -1,0 +1,25 @@
+.how-it-works {
+  padding: 94px 0;
+  .works-cards {
+    display: flex;
+    margin-top: 56px;
+    gap: 43px;
+    .work-card:nth-child(2) {
+      color: white;
+      background-color: var(--main-blue-color);
+      h3, p {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (width < 992px) {
+  .how-it-works .works-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-works .works-cards {
+    gap: 20px;
+  }
+}
