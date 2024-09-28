@@ -12,5 +12,6 @@
 @media screen and (width < 992px) {
   .most-trending .cards-container {
     row-gap: 20px;
+    justify-content: center;
   }
 }
