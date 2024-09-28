@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Tabs.css'
 
-const Tabs = ({ data }) => {
+const Tabs = ({ data, filter }) => {
 
   const [active, setActive] = useState(0)
 
@@ -9,7 +9,7 @@ const Tabs = ({ data }) => {
     <div className='tabs'>
       {
         data.map((item, index) => (
-          <button key={index} className={`tab ${active == index? "active" : ""}`} onClick={() => setActive(index)}>{item.category}</button>
+          <button key={index} className={`tab ${active == index? "active" : ""}`} onClick={() => setActive(index) & filter(item.cat)}>{item.category}</button>
         ))
       }
     </div>
